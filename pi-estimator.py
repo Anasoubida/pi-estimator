@@ -27,19 +27,7 @@ def pi_estimator_spark(n):
     print ("Le temps d'execution est égale à : ", t_dex ,". Pi est éstimé à: ",pi)
     return pi
 
-n = input('Donner la taille de l echantillon aleatoire : ')
-
-tmps_debut = time()
-pi = pi_estimator_numpy(int(n))
-tmps_fin = time()
-print('----------------------------------------------------------------------')
-print ("Le temps de calcul est de: ",tmps_fin -tmps_debut ,". Pi est éstimé à: ",pi)
-print('----------------------------------------------------------------------')
-
-
-
 # Estimation de pi et le temps de calcul par numpy 
-
 #Fonction qui estime pi
 
 def pi_estimator_numpy(n):
@@ -52,6 +40,8 @@ def pi_estimator_numpy(n):
     pi = (4* float(n_1))/n  
     return pi    
 
+if name__== '__main':
+    
 n = input('Donner la taille de l echantillon aleatoire : ')
 
 tmps_debut = time()
@@ -60,6 +50,9 @@ tmps_fin = time()
 print('----------------------------------------------------------------------')
 print ("Le temps de calcul est de: ",tmps_fin -tmps_debut ,". Pi est éstimé à: ",pi)
 print('----------------------------------------------------------------------')
+
+
+pi_estimator_spark(int(n))
 
 
 
