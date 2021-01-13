@@ -45,8 +45,8 @@ print('----------------------------------------------------------------------')
 def pi_estimator_numpy(n):
     n_1= 0 
     for i in range(n):
-      x = r.random()
-      y = r.random()
+      x = random()
+      y = random()
       if (x**2 + y**2) < 1.0:
         n_1 += 1
     pi = (4* float(n_1))/n  
